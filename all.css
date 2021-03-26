@@ -1,39 +1,56 @@
-.wrap{
+.wrap {
     margin: 0 auto;
     width: 75%;
     text-align: center;
 }
-.fa-youtube{
-    color:red;
+
+.fa-youtube {
+    color: red;
     text-decoration: none;
     font-size: 1.5rem;
 }
-.fa-codepen{
-    color:#000;
+
+.fa-codepen {
+    color: #000;
     text-decoration: none;
     font-size: 1.5rem;
 }
-td,th{
+
+td,
+th {
     min-width: 50px;
     text-align: center;
 }
-tbody tr:hover{
+
+tbody tr:hover {
     background-color: #eee;
 }
-.groupbox{
+
+.groupbox {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.rankingGroup{
+
+.rankingGroup {
     width: 100%;
     margin: 0px 10px;
 }
-.rankingGroup table{
-    width:100%;
+
+.rankingGroup table {
+    width: 100%;
 }
 
-.rankingSortby{
+.rankingSortby {
     margin: 10px;
     text-align: right;
+}
+
+.rankingSortby {
+    margin: 10px 0;
+    text-align: left;
+}
+
+#sortby {
+    padding: 10px;
 }
