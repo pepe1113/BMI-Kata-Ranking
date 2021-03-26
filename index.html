@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
+
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>BMI KATA 排行榜</h1>
+        <h2>小組排名</h2>
+        <div class="groupbox">
+            <div class="rankingGroup">
+                <h3>最佳組別投稿數</h3>
+                <table class="pure-table pure-table-horizontal">
+                    <thead>
+                        <tr>
+                            <th>排名</th>
+                            <th>組別</th>
+                            <th>投稿數</th>
+                        </tr>
+                    </thead>
+                    <tbody class="groupMost">
+                        <tr>
+                            <td>排名</td>
+                            <td>組別</td>
+                            <td>投稿數</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rankingGroup">
+                <h3>總平均秒數排名</h3>
+                <table class="pure-table pure-table-horizontal">
+                    <thead>
+                        <tr>
+                            <th>排名</th>
+                            <th>組別</th>
+                            <th>總平均秒數</th>
+                        </tr>
+                    </thead>
+                    <tbody class="groupFast">
+                        <tr>
+                            <td>排名</td>
+                            <td>組別</td>
+                            <td>總平均秒數</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <h2>個人排名</h2>
+        <div class="rankingSortby">
+            <select id="sortby">
+                <option value="" disabled selected hidden>排序方式</option>
+                <option value="sortByTime">投遞時間排序</option>
+                <option value="sortBySecond">秒數由低到高</option>
+            </select>
+        </div>
+        <div class="rankingPerson">
+            <table class="pure-table pure-table-horizontal">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>名字</th>
+                        <th>組別</th>
+                        <th>影片</th>
+                        <th>code</th>
+                        <th>分鐘數</th>
+                        <th>投遞時間</th>
+                        <th>想說的話</th>
+                    </tr>
+                </thead>
+                <tbody class="js-rankingData">
+                    <tr>
+                        <td>排名</td>
+                        <td>名字</td>
+                        <td>組別</td>
+                        <td class="youtube"><a class="fab fa-youtube" href="#"></a></td>
+                        <td><a class="fab fa-codepen" href="#"></a></td>
+                        <td>分鐘數</td>
+                        <td>投遞時間</td>
+                        <td>想說的話</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>
